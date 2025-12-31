@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+    overflow-x: hidden;
+} */
+
+header{
+    height: 100px;
+    display: flex;
+     justify-content: space-between;
+     font-size: xx-large;
+     padding-top: 25px;
+     align-items: center;
+     background-color: #a6d4df;
+     /* margin: auto; */
+}
+.logo {
+    padding-top: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-left: 20px;
+}
+    
+
+.Nav-link ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+
+.btn{
+    background-color: #14cbd8;
+    border: none;
+    padding: 10px 50px;
+    font-size: x-large;
+    gap: 10px;
+}
+.Right-side {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.icon{
+    padding-right: 40px;
+}
+.Hero {
+    height: calc(100vh - 100px); /* 90px approx header height */
+    position: relative;
+    overflow: hidden;
+}
+.image {
+    position: absolute; /* Image ko background banaya */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Text iske upar dikhega */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark layer ke liye */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Text ko sabse upar laane ke liye */
+    padding-top: 150px; /* Text ko thoda niche se shuru karne ke liye */
+    padding-left: 10%;
+    color: white;
+}
